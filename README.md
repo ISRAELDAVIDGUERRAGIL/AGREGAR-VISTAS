@@ -135,6 +135,7 @@ php artisan migrate
 
 5. Copiar los archivos de este repo a las carpetas correspondientes:
    - `app/Http/Controllers/Api/` → 3 controladores
+  En la parte de controllers, debemos solamente copiar la parte para poder manejar la paginacion 
    - `resources/views/` → layouts, cargos, empleados, funciones
    - `resources/js/app.js` → reemplazar (o mergear el objeto `window.api`)
    - `resources/css/app.css` → mergear si es necesario
@@ -147,4 +148,6 @@ php artisan migrate
 ```bash
 npm install && npm run build
 php artisan serve
+o todo junto
+composer run dev
 ```
